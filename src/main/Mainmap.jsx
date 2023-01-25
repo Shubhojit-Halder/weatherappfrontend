@@ -11,7 +11,7 @@ const Mainmap = () => {
       setapiData(response.data);
     };
     getDatafromAPI();
-  },[]);
+  }, []);
   return (
     <>
       <div
@@ -23,12 +23,8 @@ const Mainmap = () => {
           flexWrap: "wrap",
         }}
       >
-        {/* {apiData.map((data, index) => {
-          console.log(data);
-          return ( */}
         <MapContainer
-          // key={index}
-          center={[22,80]}
+          center={[22, 80]}
           zoom={5}
           scrollWheelZoom={false}
           style={{ height: "100vh", width: "100%" }}
@@ -38,9 +34,7 @@ const Mainmap = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {apiData.map((data, index) => {
-
-            // console.log();
-            return ( 
+            return (
               <Marker position={[data.coord.lat, data.coord.lon]} key={index}>
                 <Popup>
                   <b>{data.name}</b> <br /> Easily customizable.
@@ -49,8 +43,6 @@ const Mainmap = () => {
             );
           })}
         </MapContainer>
-        {/* );
-        })} */}
       </div>
     </>
   );
