@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import Mainmap from './main/Mainmap';
+import Mainmap from './Components/Mainmap';
+
 // import 'leaflet/dist/leaflet.css';
 
 function App() {
