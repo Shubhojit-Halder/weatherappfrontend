@@ -10,8 +10,8 @@ const MapStyling = styled.div`
   }
   .name {
     font-size: 25px;
-    color: #00331b;
-    text-shadow: 0 0 3px #00c3ff7b, 0 0 2px #05ff374f;
+    color: #00c8ff8d;
+    text-shadow: 0 0 1px #4000ff97, 0 0 1px #1500ff7b;
   }
   .map-container-div {
     position: relative;
