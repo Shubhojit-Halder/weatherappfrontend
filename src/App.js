@@ -1,12 +1,11 @@
-import './App.css';
-import Mainmap from './Components/Mainmap';
+import "./App.css";
 
-// import 'leaflet/dist/leaflet.css';
+import Mainmap from "./Components/Mainmap";
 
 function App() {
   return (
     <div className="App">
-      <Mainmap/>
+      <Mainmap />
     </div>
   );
 }
